@@ -758,7 +758,7 @@
 	
 	.section-wrapper .container { z-index:9; }
 		
-	.main-title-section-wrapper { float:left; width:100%; margin:0px 0px 65px; padding:40px 0px 43px; clear:both; background-color:rgba(0, 0, 0, 0.05); }
+	.main-title-section-wrapper { float:left; width:100%; margin:0px 0px 35px; padding:40px 0px 43px; clear:both; background-color:rgba(0, 0, 0, 0.05); }
 	.main-title-section-wrapper.dt-sc-dark-bg { background-color:rgba(0, 0, 0, 0.7); }
 	
  	.header-on-slider .main-title-section-wrapper { padding-top:130px; }

@@ -22,8 +22,8 @@
 	#main { float:left; clear:both; width:100%; margin:0px; padding:0px; display:block; }
 	
 	#primary { width:870px; margin:0px; padding:0px 0px 0px; float:left; position:relative; }
-	#primary.content-full-width { width:100%; }
-	#primary.with-left-sidebar { float:right; margin-left:30px; }
+/*	#primary.content-full-width { width:100%; }
+*/	#primary.with-left-sidebar { float:right; margin-left:30px; }
 	#primary.with-right-sidebar { float:left; margin-right:30px; }
 	#primary.with-both-sidebar { width:570px; float:left; margin:0px 30px; }
 	
