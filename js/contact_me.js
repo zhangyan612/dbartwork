@@ -30,14 +30,16 @@ $(function() {
                 success: function(data) {
                     // Success message
                     console.log("message sent is:" + name +", " + email + ", " + message);
-                    console.log("return data is" + data);
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
-
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
+                    console.log("return data is:" + data);
+                    if(data == "Your email is invalid"){
+                        $('#success').html("<div class='alert alert-danger'><strong>Sorry, it seems your email is invalid or fields are blank, if you have issue with this form, please email me directly to barron.diana1994@gmail.com. Sorry for the inconvenience!</strong></div>");
+                    }else{
+                        $('#success').html("<div class='alert alert-success'>");
+                        $('#success > .alert-success').html("<strong>Your message has been sent. </strong>");
+                        $('#success > .alert-success').append('</div>');
+                        //clear all fields
+                        $('#contactForm').trigger("reset");
+                    }
                 },
                 error: function() {
                     // Fail message
