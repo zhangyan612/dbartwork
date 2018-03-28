@@ -27,8 +27,10 @@ $(function() {
                     message: message
                 },
                 cache: false,
-                success: function() {
+                success: function(data) {
                     // Success message
+                    console.log("message sent is:" + name +", " + email + ", " + message);
+                    console.log("return data is" + data);
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<strong>Your message has been sent. </strong>");
                     $('#success > .alert-success')
