@@ -26,7 +26,7 @@ try {
    $content = new SendGrid\Content("text/plain", "You have received a new message from your website's contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nMessage:\n$message");
 
    $mail = new SendGrid\Mail($from, $subject, $to, $content);
-   $apiKey = getenv('SENDGRID_API_KEY');
+   $apiKey = ""//getenv('SENDGRID_API_KEY');
    $sg = new \SendGrid($apiKey);
    $response = $sg->client->mail()->send()->post($mail);
 
